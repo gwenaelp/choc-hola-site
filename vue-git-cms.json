@@ -44,7 +44,7 @@
       "type": "html",
       "default": true,
       "fragments": [{
-          "id": "demarche-content",
+          "id": "mainContent",
           "title": "Demarche",
           "fragment": "fragments/demarche.html",
           "type": "html"
@@ -57,7 +57,7 @@
       "type": "html",
       "default": true,
       "fragments": [{
-          "id": "ou-nous-trouver-content",
+          "id": "mainContent",
           "title": "Ou nous trouver",
           "fragment": "fragments/ou-nous-trouver.html",
           "type": "html"
@@ -70,7 +70,7 @@
       "type": "html",
       "default": true,
       "fragments": [{
-          "id": "activites-content",
+          "id": "mainContent",
           "title": "Contact information",
           "fragment": "fragments/activites-content.html",
           "type": "html"
