@@ -71,9 +71,14 @@
       "default": true,
       "fragments": [{
           "id": "mainContent",
-          "title": "Contact information",
+          "title": "Entete",
           "fragment": "fragments/activites-content.html",
           "type": "html"
+        }, {
+          "id": "list",
+          "title": "Liste d'activites",
+          "fragment": "fragments/activites-list.json",
+          "type": "list"
         }
       ]
     }, {
