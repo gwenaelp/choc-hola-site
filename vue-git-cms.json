@@ -35,31 +35,6 @@
           "title": "Story text",
           "fragment": "fragments/story-text.html",
           "type": "html"
-        },{
-          "id": "Menu-header",
-          "title": "Menu header",
-          "fragment": "fragments/menu-header.json",
-          "type": "gallery",
-          "maxImages": 1
-        },{
-          "id": "menu",
-          "title": "Menu",
-          "fragment": "fragments/index-menu.json",
-          "type": "gallery",
-          "max_image_width": 575,
-          "max_image_height": 390,
-          "maxImages": 20,
-          "fields": [{
-            "type": "input",
-            "inputType": "text",
-            "label": "Title",
-            "model": "title"
-          },{
-            "type": "input",
-            "inputType": "text",
-            "label": "Description",
-            "model": "description"
-          }]
         }
       ]
     }, {
