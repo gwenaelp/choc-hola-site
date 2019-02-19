@@ -1,0 +1,130 @@
+{
+  "pages": [
+    {
+      "title": "Index",
+      "template": "templates/index.html",
+      "destination": "index.html",
+      "type": "html",
+      "default": true,
+      "fragments": [
+        {
+          "id": "headerText",
+          "title": "Header text",
+          "fragment": "fragments/main-headertext.json",
+          "type": "gallery",
+          "fields": [{
+            "type": "input",
+            "inputType": "text",
+            "label": "Title",
+            "model": "title"
+          },{
+            "type": "input",
+            "inputType": "text",
+            "label": "Description",
+            "model": "description"
+          }],
+          "maxImages": 1
+        },{
+          "id": "storyImage",
+          "title": "Story Image and title",
+          "fragment": "fragments/story-image.json",
+          "type": "gallery",
+          "maxImages": 1
+        },{
+          "id": "storyText",
+          "title": "Story text",
+          "fragment": "fragments/story-text.html",
+          "type": "html"
+        },{
+          "id": "Menu-header",
+          "title": "Menu header",
+          "fragment": "fragments/menu-header.json",
+          "type": "gallery",
+          "maxImages": 1
+        },{
+          "id": "menu",
+          "title": "Menu",
+          "fragment": "fragments/index-menu.json",
+          "type": "gallery",
+          "max_image_width": 575,
+          "max_image_height": 390,
+          "maxImages": 20,
+          "fields": [{
+            "type": "input",
+            "inputType": "text",
+            "label": "Title",
+            "model": "title"
+          },{
+            "type": "input",
+            "inputType": "text",
+            "label": "Description",
+            "model": "description"
+          }]
+        }
+      ]
+    }, {
+      "title": "Demarche",
+      "template": "templates/generic.html",
+      "destination": "demarche.html",
+      "type": "html",
+      "default": true,
+      "fragments": [{
+          "id": "demarche-content",
+          "title": "Demarche",
+          "fragment": "fragments/demarche.html",
+          "type": "html"
+        }
+      ]
+    }, {
+      "title": "Ou-nous-trouver",
+      "template": "templates/generic.html",
+      "destination": "ou-nous-trouver.html",
+      "type": "html",
+      "default": true,
+      "fragments": [{
+          "id": "ou-nous-trouver-content",
+          "title": "Ou nous trouver",
+          "fragment": "fragments/ou-nous-trouver.html",
+          "type": "html"
+        }
+      ]
+    }, {
+      "title": "Activités",
+      "template": "templates/generic.html",
+      "destination": "activites.html",
+      "type": "html",
+      "default": true,
+      "fragments": [{
+          "id": "activites-content",
+          "title": "Contact information",
+          "fragment": "fragments/activites-content.html",
+          "type": "html"
+        }
+      ]
+    }, {
+      "title": "Contact",
+      "template": "templates/generic.html",
+      "destination": "contact.html",
+      "type": "html",
+      "default": true,
+      "fragments": [{
+          "id": "mainContent",
+          "title": "Contact information",
+          "fragment": "fragments/contact-info.html",
+          "type": "html"
+        }
+      ]
+    }
+  ],
+  "options": {
+    "title": "Test site"
+  },
+  "optionsSchema": {
+    "fields": [
+    ]
+  },
+  "site": {
+    "canAddPages": false,
+    "publishEverythingButton": false
+  }
+}
