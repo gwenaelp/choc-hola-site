@@ -78,7 +78,24 @@
           "id": "list",
           "title": "Liste d'activites",
           "fragment": "fragments/activites-list.json",
-          "type": "list"
+          "type": "list",
+          "listItems": {
+            "type": "object",
+            "default": {},
+            "schema": {
+              "fields": [{
+                "type": "input",
+                "inputType": "text",
+                "label": "Label",
+                "model": "label"
+              }, {
+                "type": "input",
+                "inputType": "text",
+                "label": "Field",
+                "model": "field"
+              }]
+            }
+          }
         }
       ]
     }, {
