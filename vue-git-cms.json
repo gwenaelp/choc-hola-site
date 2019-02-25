@@ -84,9 +84,23 @@
             "default": {},
             "schema": {
               "fields": [{
+                "type": "select",
+                "label": "Type of box",
+                "model": "boxType",
+                "values": [{
+                  "id": "leftImage",
+                  "name": "Image a gauche"
+                }, {
+                  "id": "rightImage",
+                  "name": "Image a droite"
+                }, {
+                  "id": "backgroundImage",
+                  "name": "Image en fond"
+                }]
+              }, {
                 "type": "image-cloudinary",
                 "model": "image",
-                "label": "image"
+                "label": "Image"
               }, {
                 "type": "input",
                 "inputType": "text",
