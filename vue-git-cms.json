@@ -85,7 +85,7 @@
             "schema": {
               "fields": [{
                 "type": "select",
-                "label": "Type of box",
+                "label": "Type de layout",
                 "model": "boxType",
                 "values": [{
                   "id": "leftImage",
@@ -104,13 +104,12 @@
               }, {
                 "type": "input",
                 "inputType": "text",
-                "label": "Label",
-                "model": "label"
+                "label": "Titre",
+                "model": "title"
               }, {
-                "type": "input",
-                "inputType": "text",
-                "label": "Field",
-                "model": "field"
+                "type": "html",
+                "label": "Contenu",
+                "model": "content"
               }]
             }
           }
