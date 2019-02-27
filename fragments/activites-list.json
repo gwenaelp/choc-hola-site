@@ -1,1 +1,14 @@
-{}
+{
+  "array": [
+    {
+      "boxType": "leftImage",
+      "title": "TEST1",
+      "content": "<p>text de test 1</p>"
+    },
+    {
+      "boxType": "backgroundImage",
+      "title": "TEST 2",
+      "content": "<p>text de test 2</p>"
+    }
+  ]
+}
