@@ -10,5 +10,6 @@
       "title": "TEST 2",
       "content": "<p>text de test 2</p>"
     }
-  ]
+  ],
+  "template": "{{#each array}}{{this.content}}{{/each}}"
 }
