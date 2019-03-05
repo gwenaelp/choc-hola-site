@@ -1,16 +1,5 @@
 {
-  "array": [
-    {
-      "boxType": "leftImage",
-      "title": "TEST1",
-      "content": "<p>text de test 1</p>"
-    },
-    {
-      "boxType": "backgroundImage",
-      "title": "Elephant!",
-      "content": "<p>text de test 2</p>"
-    }
-  ],
-  "template": "{{#each array}}{{this.content}}{{/each}}",
-  "result": "&lt;p&gt;text de test 1&lt;/p&gt;&lt;p&gt;text de test 2&lt;/p&gt;"
+  "array": [],
+  "template": "{{#each array}}\n  {{#ifCond this.boxType \"===\" \"leftImage\"}}\n    <div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12 col-md-6 \">\n              <div class=\"about-img\"><img src=\"{{this.image}}\" class=\"img-responsive\" alt=\"\"></div>\n          </div>\n          <div class=\"col-xs-12 col-md-6\">\n            <div class=\"about-text\">\n                <h2>{{this.title}}</h2>\n              <hr>\n              <p>{{this.content}}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  {{/ifCond}}\n  {{#ifCond this.boxType \"===\" \"rightImage\"}}\n    <div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12 col-md-6\">\n            <div class=\"about-text\">\n                <h2>{{this.title}}</h2>\n              <hr>\n              <p>{{this.content}}</p>\n            </div>\n          </div>\n          <div class=\"col-xs-12 col-md-6 \">\n            <div class=\"about-img\"><img src=\"{{this.image}}\" class=\"img-responsive\" alt=\"\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  {{/ifCond}}\n  {{#ifCond this.boxType \"===\" \"backgroundImage\"}}\n    <div class=\"section-title text-center center\" style=\"background: #444 url({{this.image}}) center center no-repeat fixed;\">\n      <div class=\"overlay\">\n        <h2>{{this.title}}</h2>\n        <hr>\n        <p>{{this.content}}</p>\n      </div>\n    </div>  \n  {{/ifCond}}\n{{/each}}",
+  "result": ""
 }
