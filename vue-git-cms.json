@@ -45,7 +45,7 @@
       "default": true,
       "fragments": [{
           "id": "list",
-          "title": "Liste d'activites",
+          "title": "Démarche",
           "fragment": "fragments/demarche-list.json",
           "type": "list",
           "listItems": {
