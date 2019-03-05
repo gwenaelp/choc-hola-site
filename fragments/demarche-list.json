@@ -1,0 +1,16 @@
+{
+  "array": [
+    {
+      "boxType": "leftImage",
+      "title": "TEST1",
+      "content": "<p>text de test 1</p>"
+    },
+    {
+      "boxType": "backgroundImage",
+      "title": "Elephant!",
+      "content": "<p>text de test 2</p>"
+    }
+  ],
+  "template": "{{#each array}}{{this.content}}{{/each}}",
+  "result": "&lt;p&gt;text de test 1&lt;/p&gt;&lt;p&gt;text de test 2&lt;/p&gt;"
+}
