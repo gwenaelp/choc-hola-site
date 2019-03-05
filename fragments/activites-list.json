@@ -6,12 +6,12 @@
       "content": "<p>text de test 1</p>"
     },
     {
-      "boxType": "backgroundImage",
+      "boxType": "leftImage",
       "title": "Le nid",
       "content": "<p>Vue du nid</p>",
       "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551543690/53236736_2149339888463970_5413161099505696768_n_cinbw5.jpg"
     }
   ],
   "template": "{{#each array}}{{this.content}}{{/each}}",
-  "result": "&lt;p&gt;text de test 1&lt;/p&gt;&lt;p&gt;Vue du nid&lt;/p&gt;"
+  "result": "<p>text de test 1</p><p>Vue du nid</p>"
 }
