@@ -52,7 +52,7 @@
             "type": "object",
             "wrapperOptions": {
               "titleKey": "title",
-              "subTitleKey": "boxType",
+              "subTitleKey": "boxType"
             },
             "default": {},
             "schema": {
@@ -120,7 +120,7 @@
           "listItems": {
             "wrapperOptions": {
               "titleKey": "title",
-              "subTitleKey": "boxType",
+              "subTitleKey": "boxType"
             },
             "type": "object",
             "default": {},
