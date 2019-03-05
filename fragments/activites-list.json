@@ -6,12 +6,12 @@
       "content": "<p>text de test 1</p>"
     },
     {
-      "boxType": "leftImage",
+      "boxType": "rightImage",
       "title": "Le nid",
       "content": "<p>Vue du nid</p>",
       "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551543690/53236736_2149339888463970_5413161099505696768_n_cinbw5.jpg"
     }
   ],
-  "template": "{{#each array}}{{this.content}}{{/each}}",
-  "result": "<p>text de test 1</p><p>Vue du nid</p>"
+  "template": "{{#each array}}\n\t{{#ifCond this.boxType \"===\" \"leftImage\"}}\n\t\t<div>LeftImage<br/>{{this.content}}</div>\n    {{/ifCond}}\n\t{{#ifCond this.boxType \"===\" \"rightImage\"}}\n\t\t<div>RightImage<br/>{{this.content}}</div>\n    {{/ifCond}}\n{{/each}}",
+  "result": "\t\t<div>LeftImage<br/><p>text de test 1</p></div>\n\t\t<div>RightImage<br/><p>Vue du nid</p></div>\n"
 }
