@@ -50,6 +50,10 @@
           "type": "list",
           "listItems": {
             "type": "object",
+            "wrapperOptions": {
+              "titleKey": "title",
+              "subTitleKey": "boxType",
+            },
             "default": {},
             "schema": {
               "fields": [{
@@ -114,6 +118,10 @@
           "fragment": "fragments/activites-list.json",
           "type": "list",
           "listItems": {
+            "wrapperOptions": {
+              "titleKey": "title",
+              "subTitleKey": "boxType",
+            },
             "type": "object",
             "default": {},
             "schema": {
