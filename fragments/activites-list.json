@@ -4,23 +4,27 @@
       "boxType": "leftImage",
       "title": "TEST1",
       "content": "<p>text de test 1</p>",
-      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551789004/469313_e49vgj6srdmn851d02i0404bur_905874_jlvhku.jpg"
+      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551789004/469313_e49vgj6srdmn851d02i0404bur_905874_jlvhku.jpg",
+      "activityType": "listItem"
     },
     {
       "boxType": "backgroundImage",
       "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551788272/DSC_1093_ed4mit.jpg",
       "title": "image en fond",
-      "content": ""
+      "content": "",
+      "activityType": "listItem"
     },
     {
       "boxType": "rightImage",
       "title": "Le nid",
       "content": "<p>Vue du nid</p>",
-      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551543690/53236736_2149339888463970_5413161099505696768_n_cinbw5.jpg"
+      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551543690/53236736_2149339888463970_5413161099505696768_n_cinbw5.jpg",
+      "activityType": "listItem"
     },
     {
       "boxType": "backgroundImage",
-      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551789240/11822115_10206277413547137_1443288843_o_oijajj.jpg"
+      "image": "https://res.cloudinary.com/gwenaelp/image/upload/v1551789240/11822115_10206277413547137_1443288843_o_oijajj.jpg",
+      "activityType": "listItem"
     }
   ],
   "template": "{{#each array}}\n  {{#ifCond this.boxType \"===\" \"leftImage\"}}\n    <div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12 col-md-6 \">\n              <div class=\"about-img\"><img src=\"{{this.image}}\" class=\"img-responsive\" alt=\"\"></div>\n          </div>\n          <div class=\"col-xs-12 col-md-6\">\n            <div class=\"about-text\">\n                <h2>{{this.title}}</h2>\n              <hr>\n              <p>{{this.content}}</p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  {{/ifCond}}\n  {{#ifCond this.boxType \"===\" \"rightImage\"}}\n    <div>\n      <div class=\"container\">\n        <div class=\"row\">\n          <div class=\"col-xs-12 col-md-6\">\n            <div class=\"about-text\">\n                <h2>{{this.title}}</h2>\n              <hr>\n              <p>{{this.content}}</p>\n            </div>\n          </div>\n          <div class=\"col-xs-12 col-md-6 \">\n            <div class=\"about-img\"><img src=\"{{this.image}}\" class=\"img-responsive\" alt=\"\"></div>\n          </div>\n        </div>\n      </div>\n    </div>\n  {{/ifCond}}\n  {{#ifCond this.boxType \"===\" \"backgroundImage\"}}\n    <div class=\"section-title text-center center\" style=\"background: #444 url({{this.image}}) center center no-repeat fixed;\">\n      <div class=\"overlay\">\n        <h2>{{this.title}}</h2>\n        <hr>\n        <p>{{this.content}}</p>\n      </div>\n    </div>  \n  {{/ifCond}}\n{{/each}}",
