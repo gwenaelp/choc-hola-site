@@ -69,6 +69,9 @@
                 }, {
                   "id": "backgroundImage",
                   "name": "Image en fond"
+                }, {
+                  "id": "listItem",
+                  "name": "Element de liste"
                 }]
               }, {
                 "type": "image-cloudinary",
@@ -120,15 +123,15 @@
           "listItems": {
             "wrapperOptions": {
               "titleKey": "title",
-              "subTitleKey": "boxType"
+              "subTitleKey": "activityType"
             },
             "type": "object",
             "default": {},
             "schema": {
               "fields": [{
                 "type": "select",
-                "label": "Type de layout",
-                "model": "boxType",
+                "label": "Type d'activité",
+                "model": "activityType",
                 "values": [{
                   "id": "leftImage",
                   "name": "Image a gauche"
@@ -138,6 +141,9 @@
                 }, {
                   "id": "backgroundImage",
                   "name": "Image en fond"
+                }, {
+                  "id": "listItem",
+                  "name": "Element de liste"
                 }]
               }, {
                 "type": "image-cloudinary",
