@@ -6,7 +6,35 @@
       "destination": "index.html",
       "type": "html",
       "default": true,
-      "fragments": [
+      "fragments": [{
+          "id": "headerText",
+          "title": "Header text",
+          "fragment": "fragments/main-headertext.json",
+          "type": "gallery",
+          "fields": [{
+            "type": "input",
+            "inputType": "text",
+            "label": "Title",
+            "model": "title"
+          },{
+            "type": "input",
+            "inputType": "text",
+            "label": "Description",
+            "model": "description"
+          }],
+          "maxImages": 1
+        },{
+          "id": "storyImage",
+          "title": "Story Image and title",
+          "fragment": "fragments/story-image.json",
+          "type": "gallery",
+          "maxImages": 1
+        },{
+          "id": "storyText",
+          "title": "Story text",
+          "fragment": "fragments/story-text.html",
+          "type": "html"
+        },
         {
           "id": "list",
           "title": "Index",
