@@ -8,33 +8,51 @@
       "default": true,
       "fragments": [
         {
-          "id": "headerText",
-          "title": "Header text",
-          "fragment": "fragments/main-headertext.json",
-          "type": "gallery",
-          "fields": [{
-            "type": "input",
-            "inputType": "text",
-            "label": "Title",
-            "model": "title"
-          },{
-            "type": "input",
-            "inputType": "text",
-            "label": "Description",
-            "model": "description"
-          }],
-          "maxImages": 1
-        },{
-          "id": "storyImage",
-          "title": "Story Image and title",
-          "fragment": "fragments/story-image.json",
-          "type": "gallery",
-          "maxImages": 1
-        },{
-          "id": "storyText",
-          "title": "Story text",
-          "fragment": "fragments/story-text.html",
-          "type": "html"
+          "id": "list",
+          "title": "Index",
+          "fragment": "fragments/index-list.json",
+          "type": "list",
+          "listItems": {
+            "type": "object",
+            "wrapperOptions": {
+              "titleKey": "title",
+              "subTitleKey": "boxType"
+            },
+            "default": {},
+            "schema": {
+              "fields": [{
+                "type": "select",
+                "label": "Type de layout",
+                "model": "boxType",
+                "values": [{
+                  "id": "leftImage",
+                  "name": "Image a gauche"
+                }, {
+                  "id": "rightImage",
+                  "name": "Image a droite"
+                }, {
+                  "id": "backgroundImage",
+                  "name": "Image en fond"
+                }, {
+                  "id": "listItem",
+                  "name": "Element de liste"
+                }]
+              }, {
+                "type": "image-cloudinary",
+                "model": "image",
+                "label": "Image"
+              }, {
+                "type": "input",
+                "inputType": "text",
+                "label": "Titre",
+                "model": "title"
+              }, {
+                "type": "html",
+                "label": "Contenu",
+                "model": "content"
+              }]
+            }
+          }
         }
       ]
     }, {
@@ -98,10 +116,51 @@
       "type": "html",
       "default": true,
       "fragments": [{
-          "id": "mainContent",
-          "title": "Ou nous trouver",
-          "fragment": "fragments/ou-nous-trouver.html",
-          "type": "html"
+          "id": "list",
+          "title": "Index",
+          "fragment": "fragments/ou-nous-trouver-list.json",
+          "type": "list",
+          "listItems": {
+            "type": "object",
+            "wrapperOptions": {
+              "titleKey": "title",
+              "subTitleKey": "boxType"
+            },
+            "default": {},
+            "schema": {
+              "fields": [{
+                "type": "select",
+                "label": "Type de layout",
+                "model": "boxType",
+                "values": [{
+                  "id": "leftImage",
+                  "name": "Image a gauche"
+                }, {
+                  "id": "rightImage",
+                  "name": "Image a droite"
+                }, {
+                  "id": "backgroundImage",
+                  "name": "Image en fond"
+                }, {
+                  "id": "listItem",
+                  "name": "Element de liste"
+                }]
+              }, {
+                "type": "image-cloudinary",
+                "model": "image",
+                "label": "Image"
+              }, {
+                "type": "input",
+                "inputType": "text",
+                "label": "Titre",
+                "model": "title"
+              }, {
+                "type": "html",
+                "label": "Contenu",
+                "model": "content"
+              }]
+            }
+          }
         }
       ]
     }, {
